@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <form id="myForm">
+         
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" required>
+              <br>
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required>
+              <br>
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" required>
+            <br>
+              <label for="pincode">Pincode</label>
+              <input type="text" class="form-control" id="pincode" required>
+              <br>
+              <label for="gender">Gender</label>
+              <select class="form-control" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <br>
+              <div class="form-group">
+            <label for="food">Choice of Food (Select at least 2)</label><br>
+            <select multiple class="form-control" id="food" required>
+              <option value="pizza">Pizza</option>
+              <option value="burger">Burger</option>
+              <option value="pasta">Pasta</option>
+              <option value="sushi">Sushi</option>
+              <option value="salad">Salad</option>
+            </select>
+          </div>
+              <br>
+              <label for="state">State</label>
+              <input type="text" class="form-control" id="state" required>
+              <br>
+              <label for="country">Country</label>
+              <input type="text" class="form-control" id="country" required>
+            
+          </div>
+          <div class="button-container">
+          <button type="button" class="btn btn-primary" onclick="addRecord()">Submit</button>
+          <button type="button" class="btn btn-secondary" onclick="clearForm()">Clear Form</button>
+        </div>
+        </form>
+      
+        <hr>
+      
+        <table class="table1">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Address</th>
+              <th>Pincode</th>
+              <th>Gender</th>
+              <th>Food</th>
+              <th>State</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody id="dataTableBody">
+            
+          </tbody>
+        </table>
+      </div>
+      <script src="script.js"></script>
+
+</body>
+</html>
